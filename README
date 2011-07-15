@@ -1,0 +1,25 @@
+What ?
+======
+This tool permits to convert non-premultiplied alpha png file to its
+premultiplied equivalent.
+
+Note: The python version is 100 times slower than the C version.
+
+Requirements
+============
+ - Python version requires numpy and PIL
+ - C version requires libpng
+
+How to run the Python version
+=============================
+$ python NPMApng2PMApng.py in.png out.png
+
+
+How to compile and run the C version
+====================================
+edit the configure.mk file to make CONF_INCS and CONF_LIBS links to
+your libpng installation directory.
+
+$ make
+$ ./NPMApng2PMApng in.png out.png
+
